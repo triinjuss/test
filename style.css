@@ -1,0 +1,182 @@
+/* ekraani vaade */
+
+body {
+    font-family: 'Josefin Slab', serif;
+    /* ROOSA */
+    /* background-color: #fb9985;  */
+    /* ROHELINE */
+    background-color: #b3e3b5;
+    /* background-color: #F8E5E5; */
+    color: white
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+.container {
+    
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+ 
+
+}
+
+.header-container {
+    /* ROHELINE */
+    /* background-color: #b3e3b5; */
+    /* ROOSA */
+    background-color: #fb9985;
+    /* background-color: #48484a; */
+    min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+
+
+}
+
+
+header {
+    max-width: 1024px;
+    /* background-color: #b3e3b5; */
+    background-color: #fb9985;
+    /* background-color: #48484a; */
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+   align-self: auto;
+    align-items: center; 
+   
+
+}
+
+.col {
+    background-color: #484848;
+     /* background-color: #fb9985; */
+    width: 30%;
+    margin-bottom: 40px;
+
+}
+
+.col p {
+    font-size: 0,825rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+.mybutton {
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+.highlight {
+    font-weight: 700;
+    color: whitesmoke;
+    font-size: 32px;
+    padding-right: 10px;
+    padding-inline-start: 20px;
+    align-items: center;
+  
+  
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+
+
+
+/* see on tablet vaade */
+@media (max-width: 768px) {
+    .col {
+        width: 45%;
+    }
+    .hide-desktop-only {
+        display: block;
+    }
+   
+    .header-container {
+        position: relative;
+    }
+    .container {
+        padding-top: 40px;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    nav a {
+        display: block;
+    }
+    .logo {
+        padding: 40px 0;
+    }
+    .mybutton {
+        margin-left: 0
+    }
+    .mob-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+    .mob-nav {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    }
+
+    .navbutton {
+        display: block;
+        background-color: white;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+        color:  #fb9985;
+        
+    }
+
+}
+
+/* mobiili vaade */
+@media (max-width: 400px) {
+    .col {
+        width: 100%;
+    }
+    .hide-mobile {
+        display: none;
+    }
+
+    /* .hide-desktop-only {
+        display: none;
+        padding: 15px 30px;
+    } */
+
+    
+}
+
+    
